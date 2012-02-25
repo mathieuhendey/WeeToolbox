@@ -1,7 +1,7 @@
 Package: com.wundersoft.weetoolbox
 Name: WeeToolbox
 Depends: firmware (>= 5.0), com.saurik.substrate.safemode
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: WeeToolbox is a WeeApp (Notification Center) plugin for the iPhone. This rightfully named widget allows you to perform a variety actions, including Tweeting, making a call, turning on the LED flash, uploading the contents of your clipboard to Pastie.org, and easy access to your camera.
 Maintainer: Wundersoft

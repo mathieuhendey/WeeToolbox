@@ -153,7 +153,7 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
         [optionsView release];
     }
     else {
-        UIAlertView *noPhone = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This device does not have telephone capabilities" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *noPhone = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This device does not have telephone capabilities." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [noPhone show];
         [noPhone release];
     }
@@ -196,12 +196,14 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
     		[device lockForConfiguration:nil];
             [device setTorchMode:AVCaptureTorchModeOn];
             [device unlockForConfiguration];
+            [flashButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/flashon.png"]];
     	}
   		else if (torchIsOn) {
   			[device lockForConfiguration:nil];
             [device setTorchMode:AVCaptureTorchModeOff];
             [device unlockForConfiguration];
             torchIsOn = NO;
+            [flashButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/flashoff.png"]];
   		}
     } else {
         UIAlertView *noTorch = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This device does not have an LED flash" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -218,7 +220,7 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
     NSString *string = pasteboard.string;
     
     if (string == nil) { // we dont want to send a nil value!
-        UIAlertView *derp = [[UIAlertView alloc] initWithTitle:@"No clipboard contents" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *derp = [[UIAlertView alloc] initWithTitle:@"No clipboard contents." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [derp show];
         [derp release];
     } else {
@@ -258,7 +260,7 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     // failure
-	UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:@"Result" message:@"Paste failed!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:@"Result:" message:@"Paste failed!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [activityIndicator stopAnimating];
     [activityIndicator release];
     [resultAlert show];
@@ -267,15 +269,26 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	// success
-    UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:@"Result" message:@"Paste successful! The URL has been added to your clipboard" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [resultAlert show];
-    [resultAlert release];
-    [activityIndicator stopAnimating];
-    [activityIndicator release];
-    
-    [[UIPasteboard generalPasteboard] setString:[[response URL] absoluteString]];
-	[[UIPasteboard generalPasteboard] setURL:[response URL]];
+	
+    NSURLResponse *pasteURL = [response URL];
+    if ([[pasteURL absoluteString] isEqualToString:@"http://pastie.org/pastes"]) {
+        UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:@"Result:" message:@"Unable to connect to Pastie services! They may be experiencing some downtime, please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [resultAlert show];
+        [resultAlert release];
+        [activityIndicator stopAnimating];
+        [activityIndicator release];
+    }
+    else {
+        // success
+        UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:@"Result:" message:@"Paste successful! The URL has been added to your clipboard." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [resultAlert show];
+        [resultAlert release];
+        [activityIndicator stopAnimating];
+        [activityIndicator release];
+        
+        [[UIPasteboard generalPasteboard] setString:[pasteURL absoluteString]];
+        [[UIPasteboard generalPasteboard] setURL:pasteURL];
+    }
 }
 
 /* -- Camera -- */
@@ -301,7 +314,7 @@ static NSBundle *_WeeToolboxWeeAppBundle = nil;
         [imagePicker release];
     }
     else {
-        UIAlertView *noCam = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This device does not have an LED flash" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *noCam = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"This device does not have an LED flash." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [noCam show];
         [noCam release];
     }
@@ -364,7 +377,7 @@ finishedSavingWithError:(NSError *)error
     
     [twitterButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/twitter.png"]];  //sets image for button.
     [instaCallButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/phone.png"]];  // "" ""
-    [flashButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/flash.png"]];    // "" ""
+    [flashButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/flashoff.png"]];    // "" ""
     [pastieButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/pastie.png"]];    // "" ""
     [cameraButton setImage:[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/WeeToolbox.bundle/camera.png"]];    // "" ""
     
