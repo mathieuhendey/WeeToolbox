@@ -2,8 +2,8 @@
 //  WTButton.h
 //  WeeToolbox
 //
-//  Created by Will Coughlin on 2/24/12.
-//  Copyright (c) 2012 Wundersoft. All rights reserved.
+//  Created by Mathieu Hendey on 2/24/12.
+//  
 //
 
 //#import <Foundation/Foundation.h>
