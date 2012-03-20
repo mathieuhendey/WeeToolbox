@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = "WeeToolboxPreferences";
+		cell = PSLinkCell;
+		detail = "WeeToolboxPreferencesListController";
+		icon = "WeeToolboxPreferences.png";
+		isController = 1;
+		label = WeeToolbox;
+	};
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WeeToolbox' target in the 'WeeToolbox' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

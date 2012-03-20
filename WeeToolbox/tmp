@@ -1,0 +1,123 @@
+    switch ([slot5 intValue]) {
+            case 1:
+                button5 = [wtb twitterButtonType];
+                break;
+            case 2:
+                button5 = [wtb facebookButtonType];
+                break;
+            case 3:
+                button5 = [wtb SMSButtonType];
+                break;
+            case 4:
+                button5 = [wtb phoneButtonType];
+                break;
+            case 5:
+                button5 = [wtb cameraButtonType];
+                break;
+            case 6:
+                button5 = [wtb torchButtonType];
+                break;
+            case 7:
+                button5 = [wtb pastieButtonType];
+                break;
+            case 8:
+                button5 = [wtb powerButtonType];
+                break;
+            default:
+                button5 = nil;
+                allocSlot5 = NO;
+                break;
+        }
+        
+        switch ([slot2 intValue]) {
+            case 1:
+                button6 = [wtb twitterButtonType];
+                break;
+            case 2:
+                button6 = [wtb facebookButtonType];
+                break;
+            case 3:
+                button6 = [wtb SMSButtonType];
+                break;
+            case 4:
+                button6 = [wtb phoneButtonType];
+                break;
+            case 5:
+                button6 = [wtb cameraButtonType];
+                break;
+            case 6:
+                button6 = [wtb torchButtonType];
+                break;
+            case 7:
+                button6 = [wtb pastieButtonType];
+                break;
+            case 8:
+                button6 = [wtb powerButtonType];
+                break;
+            default:
+                button6 = nil;
+                allocSlot6 = NO;
+                break;
+        }
+        
+        switch ([slot3 intValue]) {
+            case 1:
+                button7 = [wtb twitterButtonType];
+                break;
+            case 2:
+                button7 = [wtb facebookButtonType];
+                break;
+            case 3:
+                button7 = [wtb SMSButtonType];
+                break;
+            case 4:
+                button7 = [wtb phoneButtonType];
+                break;
+            case 5:
+                button7 = [wtb cameraButtonType];
+                break;
+            case 6:
+                button7 = [wtb torchButtonType];
+                break;
+            case 7:
+                button7 = [wtb pastieButtonType];
+                break;
+            case 8:
+                button7 = [wtb powerButtonType];
+                break;
+            default:
+                button7 = nil;
+                allocSlot7 = NO;
+                break;
+        }
+        
+        switch ([slot4 intValue]) {
+            case 1:
+                button8 = [wtb twitterButtonType];
+                break;
+            case 2:
+                button8 = [wtb facebookButtonType];
+                break;
+            case 3:
+                button8 = [wtb SMSButtonType];
+                break;
+            case 4:
+                button8 = [wtb phoneButtonType];
+                break;
+            case 5:
+                button8 = [wtb cameraButtonType];
+                break;
+            case 6:
+                button8 = [wtb torchButtonType];
+                break;
+            case 7:
+                button8 = [wtb pastieButtonType];
+                break;
+            case 8:
+                button8 = [wtb powerButtonType];
+                break;
+            default:
+                button8 = nil;
+                allocSlot8 = NO;
+                break;
+        }

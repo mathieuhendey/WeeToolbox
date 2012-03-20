@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>WeeToolbox</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Customize</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>slot1</string>
+			<key>label</key>
+			<string>Slot 1</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot2</string>
+			<key>label</key>
+			<string>Slot 2</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot3</string>
+			<key>label</key>
+			<string>Slot 3</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot4</string>
+			<key>label</key>
+			<string>Slot 4</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot5</string>
+			<key>label</key>
+			<string>Slot 5</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot6</string>
+			<key>label</key>
+			<string>Slot 6</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>6</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot7</string>
+			<key>label</key>
+			<string>Slot 7</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>7</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.wundersoft.weetoolbox</string>
+			<key>key</key>
+			<string>slot8</string>
+			<key>label</key>
+			<string>Slot 8</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>New Tweet</string>
+				<string>Facebook Update</string>
+				<string>New Text Message</string>
+				<string>Make Phone Call</string>
+				<string>Take Photo/Video</string>
+				<string>Turn On LED Flash</string>
+				<string>Upload To Pastie.org</string>
+				<string>Power Off/Safe Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+			</array>
+			<key>default</key>
+			<integer>8</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<!--<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>-->
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply Changes</string>
+			<key>action</key>
+			<string>applyChanges:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>(c) 2012 Wundersoft</string>
+		</dict>
+	</array>
+</dict>
+</plist>

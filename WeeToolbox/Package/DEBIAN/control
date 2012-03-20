@@ -1,0 +1,10 @@
+Package: com.wundersoft.weetoolbox
+Name: WeeToolbox
+Version: 2.0-5
+Description: WeeToolbox is a WeeApp (Notification Center) plugin for the iPhone. This widget allows you to perform a variety of actions, including Tweeting, Making Calls, Turning on the flash, and much more!
+Section: Addons (NotificationCenter)
+Depends: firmware (>= 5.0), preferenceloader, mobilesubstrate
+Priority: optional
+Architecture: iphoneos-arm
+Author: Wundersoft
+

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+FILE=/var/mobile/Library/Preferences/com.wundersoft.weetoolbox.plist
+
+if [ -f $FILE ];
+then
+    rm -v $FILE
+fi

@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		771DE86F14F84CF700A51293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771DE86E14F84CF700A51293 /* Foundation.framework */; };
+		771DE87114F84CF700A51293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771DE87014F84CF700A51293 /* UIKit.framework */; };
+		771DE88214F84CF700A51293 /* WeeToolboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DE88114F84CF700A51293 /* WeeToolboxController.m */; };
+		771DE89514F84E3000A51293 /* WTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 771DE89314F84E3000A51293 /* WTButton.m */; };
+		77612D7A1502A69900828720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77612D771502A69200828720 /* CoreGraphics.framework */; };
+		77E645101502AF74007F23F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E6450D1502AF67007F23F1 /* AVFoundation.framework */; };
+		77E645201504211A007F23F1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E6451E15042112007F23F1 /* MobileCoreServices.framework */; };
+		77E645271504214F007F23F1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E6452515042144007F23F1 /* AddressBookUI.framework */; };
+		77E645281504214F007F23F1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E6452315042140007F23F1 /* AddressBook.framework */; };
+		77E64530150585EC007F23F1 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E6452115042122007F23F1 /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		770A0D4D1508EC7700ACBDF9 /* Default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Default.plist; sourceTree = "<group>"; };
+		770A0D551508F90E00ACBDF9 /* postrm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		771DE86B14F84CF700A51293 /* WeeToolbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WeeToolbox; sourceTree = BUILT_PRODUCTS_DIR; };
+		771DE86E14F84CF700A51293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		771DE87014F84CF700A51293 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		771DE87614F84CF700A51293 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		771DE87814F84CF700A51293 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		771DE87F14F84CF700A51293 /* WeeToolbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeeToolbox-Prefix.pch"; sourceTree = "<group>"; };
+		771DE88014F84CF700A51293 /* WeeToolboxController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeeToolboxController.h; sourceTree = "<group>"; };
+		771DE88114F84CF700A51293 /* WeeToolboxController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeeToolboxController.m; sourceTree = "<group>"; };
+		771DE88714F84CF700A51293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/Info.plist; sourceTree = "<group>"; };
+		771DE88814F84CF700A51293 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		771DE88914F84CF700A51293 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		771DE88A14F84CF700A51293 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		771DE89214F84E3000A51293 /* WTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTButton.h; sourceTree = "<group>"; };
+		771DE89314F84E3000A51293 /* WTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTButton.m; sourceTree = "<group>"; };
+		771DE90014F876FC00A51293 /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		77440C8D1506E47500469CD6 /* WeeToolboxPreferences.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeeToolboxPreferences.bundle; sourceTree = "<group>"; };
+		77440C901506E47500469CD6 /* WeeToolboxPreferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = WeeToolboxPreferences.plist; sourceTree = "<group>"; };
+		77612D771502A69200828720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		778A2E171506CBE200EF7DFF /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/facebook.png; sourceTree = "<group>"; };
+		778A2E181506CBE200EF7DFF /* flashoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashoff.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/flashoff.png; sourceTree = "<group>"; };
+		778A2E191506CBE200EF7DFF /* flashon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flashon.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/flashon.png; sourceTree = "<group>"; };
+		778A2E1A1506CBED00EF7DFF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/pause.png; sourceTree = "<group>"; };
+		778A2E1B1506CBED00EF7DFF /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/phone.png; sourceTree = "<group>"; };
+		778A2E1C1506CBED00EF7DFF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/play.png; sourceTree = "<group>"; };
+		778A2E1D1506CBED00EF7DFF /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = power.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/power.png; sourceTree = "<group>"; };
+		778A2E1E1506CBED00EF7DFF /* sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sms.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/sms.png; sourceTree = "<group>"; };
+		778A2E1F1506CBED00EF7DFF /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/twitter.png; sourceTree = "<group>"; };
+		778A2E201506CBF800EF7DFF /* killall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = killall.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/killall.png; sourceTree = "<group>"; };
+		778A2E211506CBF800EF7DFF /* pastie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pastie.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/pastie.png; sourceTree = "<group>"; };
+		778A2E221506CD3A00EF7DFF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Package/System/Library/WeeAppPlugins/WeeToolbox.bundle/camera.png; sourceTree = "<group>"; };
+		77B9528314FB183B00D5AF4F /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		77E6450D1502AF67007F23F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		77E6451E15042112007F23F1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		77E6452115042122007F23F1 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		77E6452315042140007F23F1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		77E6452515042144007F23F1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		771DE86714F84CF700A51293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E645271504214F007F23F1 /* AddressBookUI.framework in Frameworks */,
+				77E645281504214F007F23F1 /* AddressBook.framework in Frameworks */,
+				77E645201504211A007F23F1 /* MobileCoreServices.framework in Frameworks */,
+				77E64530150585EC007F23F1 /* Twitter.framework in Frameworks */,
+				77E645101502AF74007F23F1 /* AVFoundation.framework in Frameworks */,
+				771DE86F14F84CF700A51293 /* Foundation.framework in Frameworks */,
+				77612D7A1502A69900828720 /* CoreGraphics.framework in Frameworks */,
+				771DE87114F84CF700A51293 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		770A0D4B1508EC7700ACBDF9 /* WeeToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				770A0D4C1508EC7700ACBDF9 /* Layouts */,
+			);
+			path = WeeToolbox;
+			sourceTree = "<group>";
+		};
+		770A0D4C1508EC7700ACBDF9 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				770A0D4D1508EC7700ACBDF9 /* Default.plist */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		771DE85F14F84CF700A51293 = {
+			isa = PBXGroup;
+			children = (
+				771DE87214F84CF700A51293 /* WeeToolbox */,
+				771DE86D14F84CF700A51293 /* Frameworks */,
+				771DE86C14F84CF700A51293 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		771DE86C14F84CF700A51293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				771DE86B14F84CF700A51293 /* WeeToolbox */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		771DE86D14F84CF700A51293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77E6452515042144007F23F1 /* AddressBookUI.framework */,
+				77E6452315042140007F23F1 /* AddressBook.framework */,
+				77E6452115042122007F23F1 /* Twitter.framework */,
+				77E6451E15042112007F23F1 /* MobileCoreServices.framework */,
+				77E6450D1502AF67007F23F1 /* AVFoundation.framework */,
+				77612D771502A69200828720 /* CoreGraphics.framework */,
+				771DE86E14F84CF700A51293 /* Foundation.framework */,
+				771DE87014F84CF700A51293 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		771DE87214F84CF700A51293 /* WeeToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				771DE8FF14F876DE00A51293 /* Includes */,
+				771DE89014F84DD800A51293 /* Classes */,
+				771DE88014F84CF700A51293 /* WeeToolboxController.h */,
+				771DE88114F84CF700A51293 /* WeeToolboxController.m */,
+				771DE87314F84CF700A51293 /* Package */,
+				771DE87714F84CF700A51293 /* Supporting Files */,
+			);
+			path = WeeToolbox;
+			sourceTree = "<group>";
+		};
+		771DE87314F84CF700A51293 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				77440C8B1506E47500469CD6 /* Library */,
+				771DE87414F84CF700A51293 /* DEBIAN */,
+				771DE88314F84CF700A51293 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		771DE87414F84CF700A51293 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				770A0D551508F90E00ACBDF9 /* postrm */,
+				77B9528314FB183B00D5AF4F /* postinst */,
+				771DE87614F84CF700A51293 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		771DE87714F84CF700A51293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				771DE87814F84CF700A51293 /* PackageVersion.plist */,
+				771DE87F14F84CF700A51293 /* WeeToolbox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		771DE88314F84CF700A51293 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				771DE88414F84CF700A51293 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		771DE88414F84CF700A51293 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				771DE88514F84CF700A51293 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		771DE88514F84CF700A51293 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				771DE88614F84CF700A51293 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		771DE88614F84CF700A51293 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				778A2E221506CD3A00EF7DFF /* camera.png */,
+				778A2E201506CBF800EF7DFF /* killall.png */,
+				778A2E211506CBF800EF7DFF /* pastie.png */,
+				778A2E1A1506CBED00EF7DFF /* pause.png */,
+				778A2E1B1506CBED00EF7DFF /* phone.png */,
+				778A2E1C1506CBED00EF7DFF /* play.png */,
+				778A2E1D1506CBED00EF7DFF /* power.png */,
+				778A2E1E1506CBED00EF7DFF /* sms.png */,
+				778A2E1F1506CBED00EF7DFF /* twitter.png */,
+				778A2E171506CBE200EF7DFF /* facebook.png */,
+				778A2E181506CBE200EF7DFF /* flashoff.png */,
+				778A2E191506CBE200EF7DFF /* flashon.png */,
+				771DE88714F84CF700A51293 /* Info.plist */,
+				771DE88814F84CF700A51293 /* InfoPlist.strings */,
+				771DE88914F84CF700A51293 /* WeeAppBackground@2x.png */,
+				771DE88A14F84CF700A51293 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+		771DE89014F84DD800A51293 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				771DE89114F84DED00A51293 /* WTButton */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		771DE89114F84DED00A51293 /* WTButton */ = {
+			isa = PBXGroup;
+			children = (
+				771DE89214F84E3000A51293 /* WTButton.h */,
+				771DE89314F84E3000A51293 /* WTButton.m */,
+			);
+			name = WTButton;
+			sourceTree = "<group>";
+		};
+		771DE8FF14F876DE00A51293 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				771DE90014F876FC00A51293 /* defs.h */,
+			);
+			name = Includes;
+			sourceTree = "<group>";
+		};
+		77440C8B1506E47500469CD6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				77440C8C1506E47500469CD6 /* PreferenceBundles */,
+				77440C8E1506E47500469CD6 /* PreferenceLoader */,
+				770A0D4B1508EC7700ACBDF9 /* WeeToolbox */,
+			);
+			name = Library;
+			path = Package/Library;
+			sourceTree = "<group>";
+		};
+		77440C8C1506E47500469CD6 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				77440C8D1506E47500469CD6 /* WeeToolboxPreferences.bundle */,
+			);
+			path = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		77440C8E1506E47500469CD6 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				77440C8F1506E47500469CD6 /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		77440C8F1506E47500469CD6 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				77440C901506E47500469CD6 /* WeeToolboxPreferences.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		771DE86814F84CF700A51293 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		771DE86A14F84CF700A51293 /* WeeToolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771DE88D14F84CF700A51293 /* Build configuration list for PBXNativeTarget "WeeToolbox" */;
+			buildPhases = (
+				771DE86614F84CF700A51293 /* Sources */,
+				771DE86714F84CF700A51293 /* Frameworks */,
+				771DE86814F84CF700A51293 /* Headers */,
+				771DE86914F84CF700A51293 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeeToolbox;
+			productName = WeeToolbox;
+			productReference = 771DE86B14F84CF700A51293 /* WeeToolbox */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		771DE86114F84CF700A51293 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 771DE86414F84CF700A51293 /* Build configuration list for PBXProject "WeeToolbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 771DE85F14F84CF700A51293;
+			productRefGroup = 771DE86C14F84CF700A51293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				771DE86A14F84CF700A51293 /* WeeToolbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		771DE86914F84CF700A51293 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		771DE86614F84CF700A51293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771DE88214F84CF700A51293 /* WeeToolboxController.m in Sources */,
+				771DE89514F84E3000A51293 /* WTButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		771DE88B14F84CF700A51293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		771DE88C14F84CF700A51293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		771DE88E14F84CF700A51293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = WeeToolbox;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeeToolbox/WeeToolbox-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/WeeToolbox.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = "will-coughlins-iphone.local";
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		771DE88F14F84CF700A51293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = WeeToolbox;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeeToolbox/WeeToolbox-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/WeeToolbox.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = "will-coughlins-iphone.local";
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		771DE86414F84CF700A51293 /* Build configuration list for PBXProject "WeeToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771DE88B14F84CF700A51293 /* Release */,
+				771DE88C14F84CF700A51293 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771DE88D14F84CF700A51293 /* Build configuration list for PBXNativeTarget "WeeToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771DE88E14F84CF700A51293 /* Release */,
+				771DE88F14F84CF700A51293 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 771DE86114F84CF700A51293 /* Project object */;
+}
